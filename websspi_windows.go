@@ -278,13 +278,13 @@ func (a *Authenticator) GetCtxHandle(r *http.Request) (*CtxtHandle, error) {
 		return nil, fmt.Errorf("could not get context handle from session: %s", err)
 	}
 	if contextHandle, ok := sessionHandle.(*CtxtHandle); ok {
-		log.Printf("CtxHandle: 0x%x\n", *contextHandle)
+		//log.Printf("CtxHandle: 0x%x\n", *contextHandle)
 		if contextHandle.Lower == 0 && contextHandle.Upper == 0 {
 			return nil, nil
 		}
 		return contextHandle, nil
 	}
-	log.Printf("CtxHandle: nil\n")
+	//log.Printf("CtxHandle: nil\n")
 	return nil, nil
 }
 
@@ -299,7 +299,7 @@ func (a *Authenticator) SetCtxHandle(r *http.Request, w http.ResponseWriter, new
 	if err != nil {
 		return fmt.Errorf("could not save context to cookie: %s", err)
 	}
-	log.Printf("New context: 0x%x\n", *ctx)
+	//log.Printf("New context: 0x%x\n", *ctx)
 	return nil
 }
 
