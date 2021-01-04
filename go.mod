@@ -1,4 +1,4 @@
-module github.com/quasoft/websspi
+module github.com/sorokinmax/websspi
 
 go 1.13
 

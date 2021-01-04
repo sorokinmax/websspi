@@ -9,7 +9,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/quasoft/websspi"
+	"github.com/sorokinmax/websspi"
 )
 
 func main() {

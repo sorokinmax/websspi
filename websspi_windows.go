@@ -14,7 +14,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/quasoft/websspi/secctx"
+	"github.com/sorokinmax/websspi/secctx"
 )
 
 // The Config object determines the behaviour of the Authenticator.
